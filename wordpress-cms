@@ -33,3 +33,8 @@ $query->is_404 = true;
  
 add_action( 'parse_query', 'fb_filter_query' );
 add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
+
+
+# Remove welcome panel in wordpress
+
+remove_action('welcome_panel', 'wp_welcome_panel');
