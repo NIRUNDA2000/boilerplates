@@ -1,0 +1,13 @@
+
+# concatenate .CRT and .CA bundle
+cat example.com.crt example.com.ca-bundle > ssl-bundle.crt
+
+# concatenate .CRT with KEY
+cat ssl-bundle.crt example_key.txt > ssl.pem
+
+           
+# you can upload ssl.pem
+
+# test ssl 
+
+openssl s_client -crlf -connect example.com:PORT
