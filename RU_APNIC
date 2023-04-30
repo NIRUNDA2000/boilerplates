@@ -6,7 +6,6 @@ RewriteRule \.(gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|php|png|css|pdf)$ - [F]
     Order allow,deny
     Deny from all
 </FilesMatch>
-
 <Files .htaccess>
     order allow,deny
     deny from all
