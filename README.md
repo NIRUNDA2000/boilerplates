@@ -1,1 +1,1 @@
-# Some configs and commands related to linux, web, cms etc.
+# Some configs and commands related to Linux, web, CMS etc.
