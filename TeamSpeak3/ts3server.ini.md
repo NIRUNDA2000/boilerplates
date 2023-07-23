@@ -1,0 +1,3 @@
+default_voice_port=9987
+filetransfer_port=30033
+query_port=10011
