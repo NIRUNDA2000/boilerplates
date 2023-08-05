@@ -1,6 +1,6 @@
 #Linux For Newbies
 
-```/boot``	Kernel, initramfs, and other boot-related files
+```/boot```	Kernel, initramfs, and other boot-related files
 
 /etc	System configuration files
 
