@@ -11,24 +11,24 @@ Slave IP: 192.168.161.130
 |    MASTER-DB1    |          
 +------------------+
 
-STEP-1: sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+STEP-1: ```sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf```
 	
-	bin-address  = 192.168.161.131 (Master IP)
+```bin-address  = 192.168.161.131 (Master IP)
 	server-id    = 1
 
 	#######Add at the end of file#############
 	log_bin = /var/log/mysql/mysql-bin.log
 	log_bin_index =/var/log/mysql/mysql-bin.log.index
 	relay_log = /var/log/mysql/mysql-relay-bin
-	relay_log_index = /var/log/mysql/mysql-relay-bin.index
+	relay_log_index = /var/log/mysql/mysql-relay-bin.index```	
 
 save & exit.
 	
-STEP-3: sudo systemctl restart mysql
+STEP-3: ```sudo systemctl restart mysql```
 
-STEP-4: sudo systemctl status mysql
+STEP-4: ```sudo systemctl status mysql```
  
-STEP-5: sudo mysql -u root -p
+STEP-5: ```sudo mysql -u root -p```
 
 STEP-6: mysql > CREATE USER 'demo1'@'192.168.161.130' IDENTIFIED WITH mysql_native_password BY 'Demo@123';     // 192.168.161.130 = Slave IP
 
