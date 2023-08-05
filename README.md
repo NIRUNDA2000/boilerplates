@@ -1,3 +1,3 @@
-# Some configs and commands related to Linux, web, CMS etc.
+## Configs and commands related to Linux, web, CMS etc.
 
 
