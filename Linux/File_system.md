@@ -1,6 +1,6 @@
 #Linux For Newbies
 
-/boot	Kernel, initramfs, and other boot-related files
+```/boot``	Kernel, initramfs, and other boot-related files
 
 /etc	System configuration files
 
@@ -23,11 +23,17 @@
 
 
 Permissions: The permissions for the file or directory, represented by a combination of characters.
+
 Number of links: The number of hard links to the file or directory.
+
 Owner: The name of the user who owns the file or directory.
+
 Group: The name of the group that owns the file or directory.
+
 Size: The size of the file in bytes.
+
 Date and time: The date and time the file or directory was last modified.
+
 Name: The name of the file or directory.
 
 
