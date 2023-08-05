@@ -1,14 +1,23 @@
 #Linux For Newbies
 
-""/boot	Kernel, initramfs, and other boot-related files""
+/boot	Kernel, initramfs, and other boot-related files
+
 /etc	System configuration files
+
 /home	Home directories for all users
+
 /lib	Shared libraries
+
 /media	Mounted filesystems, such as USB drives and CDs
+
 /mnt	Temporary mount points
+
 /opt	Optional software
+
 /root	Home directory for the root user
+
 /sbin	System binaries
+
 /usr	Most user-accessible software
 
 
