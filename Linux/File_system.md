@@ -1,4 +1,4 @@
-#Linux For Newbies
+## Linux For Newbies
 
 ```/boot```	Kernel, initramfs, and other boot-related files
 
