@@ -2,23 +2,23 @@
 
 ```/boot```	Kernel, initramfs, and other boot-related files
 
-/etc	System configuration files
+```/etc```	System configuration files
 
-/home	Home directories for all users
+```/home```	Home directories for all users
 
-/lib	Shared libraries
+```/lib```	Shared libraries
 
-/media	Mounted filesystems, such as USB drives and CDs
+```/media```	Mounted filesystems, such as USB drives and CDs
 
-/mnt	Temporary mount points
+```/mnt```	Temporary mount points
 
-/opt	Optional software
+```/opt```	Optional software
 
-/root	Home directory for the root user
+```/root```	Home directory for the root user
 
-/sbin	System binaries
+```/sbin```	System binaries
 
-/usr	Most user-accessible software
+```/usr```	Most user-accessible software
 
 
 
