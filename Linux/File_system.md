@@ -38,8 +38,7 @@ Name: The name of the file or directory.
 
 
 
-```
-total 16
+```total 16
 drwxr-xr-x  2 user  staff  64 2023-08-05 13:52 .
 drwxr-xr-x  4 user  staff  128 2023-08-05 13:51 ..
 -rw-r--r--  1 user  staff   33 2023-08-05 13:52 file.txt
