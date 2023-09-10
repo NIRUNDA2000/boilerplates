@@ -1,3 +1,6 @@
 ansible linux -m ping
 ansible linux -a "cat /etc/os-release"
 ansible linux -a "reboot"
+
+
+ansible-playbook playbookname.yml
