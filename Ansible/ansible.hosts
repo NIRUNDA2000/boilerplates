@@ -1,0 +1,8 @@
+[linux]
+1.0.0.1
+1.0.0.2
+
+[linux:vars]
+ansible_user=root
+ansible_password=P@ssword123456
+
