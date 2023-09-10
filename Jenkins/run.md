@@ -9,3 +9,6 @@ startup.bat
 java -jar jenkins-cli.jar -s http://localhost:8080/jenkins/ -auth USERNAME:APIKEY -http help
 
 --- catelight.io (jenkins build monitor)
+
+--- deploy plugin 
+ https://plugins.jenkins.io/deploy/
