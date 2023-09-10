@@ -15,3 +15,6 @@ java -jar jenkins-cli.jar -s http://localhost:8080/jenkins/ -auth USERNAME:APIKE
 
 --- sample war file to automated deploy
     https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/
+
+--- delivery pipeline plugin
+    https://plugins.jenkins.io/delivery-pipeline-plugin/
