@@ -12,6 +12,8 @@ ansible -i inventory all -m ping
 
 ansible -i inventory all -a "cat /etc/os-release"
 
+ansible-playbook -i inventory install_nginx.yml
+
 Your identification has been saved in /root/.ssh/id_rsa
 /root/.ssh/id_rsa.pub
 
