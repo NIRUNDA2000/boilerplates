@@ -11,6 +11,8 @@ inventory #hostsfile
 ansible -i inventory all -m ping
 
 ansible -i inventory all -a "cat /etc/os-release"
+ansible -i inventory all -a "apt update && apt upgrade"
+
 
 ansible-playbook -i inventory install_nginx.yml
 
