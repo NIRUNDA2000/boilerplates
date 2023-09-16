@@ -2,5 +2,18 @@ ansible linux -m ping
 ansible linux -a "cat /etc/os-release"
 ansible linux -a "reboot"
 
+172.16.10.120 - ansible host
+
+172.16.10.121 - node1
+172.16.10.122 - node2
+
+inventory #hostsfile
+ansible -i inventory all -m ping
+
+ansible -i inventory all -a "cat /etc/os-release"
+
+Your identification has been saved in /root/.ssh/id_rsa
+/root/.ssh/id_rsa.pub
+
 
 ansible-playbook playbookname.yml
