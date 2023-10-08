@@ -36,6 +36,11 @@ list of the most common options, which are discussed in depth in [the man
 page](https://nmap.org/book/man.html). Users who prefer a graphical interface
 can use the included [Zenmap front-end](https://nmap.org/zenmap/).
 
+
+Full Scan
+---------
+``` nmap -sS -sU -vv -p 1-65525 <target-ip> ```
+
 Contributing
 ------------
 Information about filing bug reports and contributing to the Nmap project can
