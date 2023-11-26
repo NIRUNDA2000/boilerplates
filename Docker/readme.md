@@ -104,11 +104,10 @@ docker exec -it <container_id>/<container_name> mysql -u root -p
 ```
 
 #### Execute MariaDB Container
-##### Make the Container name Static like - my-mariadb-container
-##### Set the DB Root password using Env Variable -MARIADB_ROOT_PASSWORD
-##### Set the DB Username using Env Variable - MARIADB_USER
-##### Set the DB password using Env Variable - MARIADB_PASSWORD
-##### Set the DB Name using Env Variable - MARIADB_DATABASE
+<p> Make the Container name Static like - my-mariadb-container
+Set the DB Root password using Env Variable -MARIADB_ROOT_PASSWORD
+Set the DB password using Env Variable - MARIADB_PASSWORD
+Set the DB Name using Env Variable - MARIADB_DATABASE </p>
 
 #### Execute Wordpress Container
 ##### Make the Container name Static like - wordpress-container
