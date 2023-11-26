@@ -18,21 +18,32 @@ docker container run --publish 8080:80 nginx
 ```
 docker container run --publish 8080:80 --detach nginx
 ```
+```
 docker container run --publish <host_port:container_port> <image_name>
+```
+```
 docker container run --publish 8080:80 nginx
+```
+```
 docker container run --publish 8080:80 --detach nginx
-
+```
+```
 docker container ls
 docker ps
-
+```
+```
 docker container stop <container_id>
 docker container stop XXXX
-
+```
+```
 docker container ls
 docker container ls -a
-
-docker run: stat a new container
-docker start XXXX: start a existing containers
+```
+```
+docker run: #### stat a new container
+docker start XXXX: #### start a existing containers
+```
+```
 
 docker container run --publish 80:80 --detach --name mynginximage  nginx
 docker container run -p 80:80 -d --name mynginximage  nginx
