@@ -47,41 +47,55 @@ docker start XXXX: #### start a existing containers
 
 docker container run --publish 80:80 --detach --name mynginximage  nginx
 docker container run -p 80:80 -d --name mynginximage  nginx
+```
+```
 
 docker conatainer logs <container_name> / <container_id>
+```
 
-# check running process inside the container
+#### check running process inside the container
+```
 docker container top <container_id> / <container_name>
+```
+#### resource consumption
 
-# resource consumption
+```
 docker stats <container_id> / <container_name>
+```
 
 docker inspect <container_id> / <container_name>
-
+```
 docker container rm <container_id> / <container_name>
-
-# remove multiple containers
+```
+#### remove multiple containers
+```
 docker container rm <container_id> <container_id> <container_id>
+```
 
+```
 ps -ef | grep nginx
-
+```
+```
 docker run -it <container_id>/ <image_name> bash
-
-# access to container when its start
+```
+#### access to container when its starting
+```
 docker container run -p 8080:80 -it --name nginx nginx /bin/bash
-
-# access to existing container 
+```
+#### access to existing container 
+```
 docker exec -it <container_id> bash
-
-# RUN MYSQL TEST
+```
+#### RUN MYSQL TEST
+```
 docker run --name mysql-test -e MYSQL_ROOT_PASSWORD=P@assword1 -d mysql:latest
-
-# create a file inside the container
+```
+#### create a file inside the container
+```
 docker exec -it <container_id>/<container_name> touch /tmp/testfile
-
-# access mysql from outside of the container
+```
+#### access mysql from outside of the container
+```
 docker exec -it <container_id>/<container_name> mysql -u root -p
-
+```
 find / -name "index.html"
-
-4Eta6#!c1VyLkJEqyvIj$hGf
