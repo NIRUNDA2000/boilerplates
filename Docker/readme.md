@@ -39,17 +39,21 @@ docker container stop XXXX
 docker container ls
 docker container ls -a
 ```
+
+#### start a new container
 ```
-docker run: #### stat a new container
-docker start XXXX: #### start a existing containers
+docker run XXXX
 ```
+#### start a existing containers
+```
+docker start XXXX
 ```
 
+```
 docker container run --publish 80:80 --detach --name mynginximage  nginx
 docker container run -p 80:80 -d --name mynginximage  nginx
 ```
 ```
-
 docker conatainer logs <container_name> / <container_id>
 ```
 
@@ -98,4 +102,5 @@ docker exec -it <container_id>/<container_name> touch /tmp/testfile
 ```
 docker exec -it <container_id>/<container_name> mysql -u root -p
 ```
-find / -name "index.html"
+
+[//]: # find / -name "index.html"
