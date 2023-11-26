@@ -1,4 +1,23 @@
+### Docker Cheatsheet
+
+```
 docker search nginx
+```
+```
+docker search nginx
+```
+```
+docker container run --publish <host_port:container_port> <image_name>
+```
+```
+docker container run --publish <host_port:container_port> <image_name>
+```
+```
+docker container run --publish 8080:80 nginx
+```
+```
+docker container run --publish 8080:80 --detach nginx
+```
 docker container run --publish <host_port:container_port> <image_name>
 docker container run --publish 8080:80 nginx
 docker container run --publish 8080:80 --detach nginx
