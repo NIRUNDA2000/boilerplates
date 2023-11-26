@@ -105,18 +105,28 @@ docker exec -it <container_id>/<container_name> mysql -u root -p
 
 #### Execute MariaDB Container
 <p> Make the Container name Static like - my-mariadb-container
+
 Set the DB Root password using Env Variable -MARIADB_ROOT_PASSWORD
+
 Set the DB password using Env Variable - MARIADB_PASSWORD
+
 Set the DB Name using Env Variable - MARIADB_DATABASE </p>
 
 #### Execute Wordpress Container
-##### Make the Container name Static like - wordpress-container
-##### Set the DB Container Name in Env Variable - WORDPRESS_DB_HOST
-##### Set the DB Name in Env Variable - WORDPRESS_DB_NAME
-##### Set the DB User in Env Variable - WORDPRESS_DB_USER
-##### Set the DB password in Env Variable - WORDPRESS_DB_PASSWORD
-##### Expose Front-End Container on port 8080/80
-##### Access WebSite on LocalHost/HostIP:PORT
+
+<p> Make the Container name Static like - wordpress-container
+
+Set the DB Container Name in Env Variable - WORDPRESS_DB_HOST
+
+Set the DB Name in Env Variable - WORDPRESS_DB_NAME
+
+Set the DB User in Env Variable - WORDPRESS_DB_USER
+
+Set the DB password in Env Variable - WORDPRESS_DB_PASSWORD
+
+Expose Front-End Container on port 8080/80
+
+Access WebSite on LocalHost/HostIP:PORT </p>
 
 ```
 docker network create mynetwork
