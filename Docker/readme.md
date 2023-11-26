@@ -103,4 +103,30 @@ docker exec -it <container_id>/<container_name> touch /tmp/testfile
 docker exec -it <container_id>/<container_name> mysql -u root -p
 ```
 
-[//]: # find / -name "index.html"
+#### Execute MariaDB Container
+##### Make the Container name Static like - my-mariadb-container
+##### Set the DB Root password using Env Variable -MARIADB_ROOT_PASSWORD
+##### Set the DB Username using Env Variable - MARIADB_USER
+##### Set the DB password using Env Variable - MARIADB_PASSWORD
+##### Set the DB Name using Env Variable - MARIADB_DATABASE
+
+#### Execute Wordpress Container
+##### Make the Container name Static like - wordpress-container
+##### Set the DB Container Name in Env Variable - WORDPRESS_DB_HOST
+##### Set the DB Name in Env Variable - WORDPRESS_DB_NAME
+##### Set the DB User in Env Variable - WORDPRESS_DB_USER
+##### Set the DB password in Env Variable - WORDPRESS_DB_PASSWORD
+##### Expose Front-End Container on port 8080/80
+##### Access WebSite on LocalHost/HostIP:PORT
+
+```
+docker network create mynetwork
+```
+```
+docker run --name my-mariadb -p 3306:3306 -d -e MARIADB_ROOT_PASSWORD=P@ssword1 -e MARIADB_USER=wordpress_user -e MARIADB_DATABASE=wordpress_database -e MARIADB_PASSWORD=wordpress_P@ssword1 --network mynetwork mariadb:latest
+```
+```
+docker run --name my-wordpress -p 8080:80 -d -e WORDPRESS_DB_HOST=my-mariadb -e WORDPRESS_DB_NAME=wordpress_database -e WORDPRESS_DB_USER=wordpress_user -e WORDPRESS_DB_PASSWORD=wordpress_P@ssword1 --network mynetwork wordpress:latest
+```
+
+<!--- find / -name "index.html" --->
