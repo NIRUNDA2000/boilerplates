@@ -138,4 +138,92 @@ docker run --name my-mariadb -p 3306:3306 -d -e MARIADB_ROOT_PASSWORD=P@ssword1 
 docker run --name my-wordpress -p 8080:80 -d -e WORDPRESS_DB_HOST=my-mariadb -e WORDPRESS_DB_NAME=wordpress_database -e WORDPRESS_DB_USER=wordpress_user -e WORDPRESS_DB_PASSWORD=wordpress_P@ssword1 --network mynetwork wordpress:latest
 ```
 
+#### Best Practice
+```
+network wp_mariadb_nwt
+network sql_php_ntw
+network mongo_ntw
+
+```
+
+```
+docker run -d -p 80:80 --name nginx-server nginx
+docker port <conatainer_id>
+docker inspect <container_id> -f {{.networkSettings.IPAddress}}
+
+```
+#### Filter bridge networks
+
+```
+docker network ls -f driver=bridge
+```
+
+#### List all Network ID and Drivers
+```
+docker network ls --format "{{.ID}}:{{.Driver}}"
+```
+#### Create a network
+```
+docker network create mytest_ntw
+```
+#### Inspect a network 
+```
+docker inspect <network_id>/ <network_name>
+```
+#### Remove a network
+```
+docker network rm <network_id>/ <network_name>
+```
+#### Remove all unused networks
+```
+docker network prune
+```
+
+#### Ping 
+```
+docker exec -it <container_name> ping <conatainer_name>
+```
+#### List Docker Images
+```
+docker images
+```
+#### Download Docker Images
+```
+docker pull <image_name>
+```
+#### Layers in Docker Images
+```
+docker history <image_name>
+```
+#### Get metadata in a Image
+```
+docker inspect <image_name>
+```
+#### Tag a Docker Image
+```
+docker tag <REPO_NAME> <TAG>
+docker tag nginx my-nginx-test
+```
+
+#### Custom Tag Docker Image
+```
+docker tag nginx:latest my-nginx:test
+docker tag nginx-test USERNAME/my-nginxtest:v1
+```
+#### Login / Logout docker hub
+```
+docker login -u USERNAME
+docker logout
+```
+#### Push Image to Docker Hub
+```
+docker image push USERNAME/Image-name
+docker image push USERNAME/Image-name:TAG
+docker image push USERNAME/my-nginxtest:v1
+```
+
+#### Login to docker container as root
+```
+docker exec -it -u root <container_id> /bin/bash
+```
 <!--- find / -name "index.html" --->
