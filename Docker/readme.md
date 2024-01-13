@@ -226,4 +226,14 @@ docker image push USERNAME/my-nginxtest:v1
 ```
 docker exec -it -u root <container_id> /bin/bash
 ```
+
+#### Docker Build Syntax
+```
+docker buid -t Image_name:TagName dir
+```
+#### Delete all unused Docker Images
+
+```
+docker image prune -a
+```
 <!--- find / -name "index.html" --->
