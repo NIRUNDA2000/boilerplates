@@ -236,4 +236,12 @@ docker buid -t Image_name:TagName dir
 ```
 docker image prune -a
 ```
+#### Docker Save Image Locally as a .tar.gz
+```
+docker save myimage:latest | gzip > myimage_latest.tar.gz
+```
+#### Docker Load image from .tar.gz
+```
+docker load < myimage_latest.tar.gz
+```
 <!--- find / -name "index.html" --->
