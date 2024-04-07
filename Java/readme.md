@@ -21,3 +21,8 @@ jstack -l JAVA_PID > jstack.out
 ```
 
 [Java Thread Dumps](https://access.redhat.com/solutions/18178)
+
+
+```
+jhsdb jstack --pid <PID> > jstack.out
+```
