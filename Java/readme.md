@@ -20,3 +20,4 @@ jstack -l JAVA_PID > jstack.out
 ./jstack.sh 1998 2 4
 ```
 
+[Java Thread Dumps](https://access.redhat.com/solutions/18178)
