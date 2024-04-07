@@ -10,5 +10,4 @@ vi ~/.bashrc
 export JAVA_HOME=/usr/local/jdk-22
 #Add the JAVA_HOME to the PATH
 export PATH="$JAVA_HOME/bin:$PATH"
-
 ```
