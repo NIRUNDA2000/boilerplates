@@ -13,7 +13,10 @@ export PATH="$JAVA_HOME/bin:$PATH"
 ```
 
 ```
+jstack -l JAVA_PID > jstack.out
+```
+```
 ./jstack.sh <PID> <# > <TIME IN SEC>
-
 ./jstack.sh 1998 2 4
 ```
+
