@@ -249,6 +249,6 @@ docker load < myimage_latest.tar.gz
 run --name nginx --mount type=bind,source="$(pwd)"/<LOCAL_DIRECTORY>,target=<PATH_IN_CONTAINER> -p 80:80 -d nginx
 ```
 ```
- run --name nginx --mount type=bind,source="$(pwd)"/www-data,target=/usr/share/nginx/html -p 80:80 -d nginx
+run --name nginx --mount type=bind,source="$(pwd)"/www-data,target=/usr/share/nginx/html -p 80:80 -d nginx
 ```
 <!--- find / -name "index.html" --->
