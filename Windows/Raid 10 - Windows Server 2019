@@ -1,0 +1,21 @@
+Open Server Manager: Launch Server Manager by clicking on the Server Manager icon on the taskbar or by searching for it in the Start menu.
+
+Add Disk Drives: Ensure that all the disk drives you want to include in the RAID 10 array are connected to the server and recognized by Windows.
+
+Initialize Disks: If the disks are new or haven't been initialized, you'll need to initialize them. To do this, open Disk Management by right-clicking on the Start button and selecting "Disk Management". In Disk Management, you'll see the uninitialized disks marked as "Offline". Right-click on each disk and select "Initialize Disk". Choose the appropriate disk initialization type (usually GPT for disks larger than 2TB) and click "OK".
+
+Create Partitions (Optional): If you want to create partitions on the disks before creating the RAID array, you can do so in Disk Management. Right-click on each disk and select "New Simple Volume". Follow the wizard to create partitions on the disks.
+
+Launch Storage Spaces: Open Server Manager, click on "File and Storage Services" in the left pane, and then click on "Storage Spaces". This will launch the Storage Spaces management console.
+
+Create Storage Pool: In the Storage Spaces management console, click on "Tasks" in the menu bar and select "New Storage Pool". Follow the wizard to create a new storage pool, selecting the disks you want to include in the pool.
+
+Create Virtual Disk: After creating the storage pool, click on "Tasks" again and select "New Virtual Disk". Follow the wizard to create a new virtual disk, selecting "Two-way mirror" as the layout. This will create a mirrored volume across all the disks in the storage pool.
+
+Select Resiliency Type: During the virtual disk creation process, you'll have the option to choose the resiliency type. Select "Two-way mirror" for RAID 10.
+
+Configure Virtual Disk: Configure the virtual disk by specifying the size, provisioning type (fixed or thinly provisioned), and drive letter or mount point.
+
+Format and Assign Drive Letter: Once the virtual disk is created, you'll need to format it and assign a drive letter or mount point. Follow the prompts to format the disk with the desired file system (NTFS, ReFS, etc.) and assign a drive letter or mount point.
+
+Completion: Once the virtual disk has been created and formatted, you can close the Storage Spaces management console. Your RAID 10 array should now be ready for use.
